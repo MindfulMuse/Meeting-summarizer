@@ -1,20 +1,20 @@
 Voice Recognition and Summarization
 
-This project transcribes speech from an audio file and summarizes the extracted text using machine learning models.
+This project transcribes audio files using Vosk and Google Speech Recognition, then summarizes the extracted text using Hugging Face Transformers.
 
 Features
-
-Converts MP3 audio to text using the Vosk speech recognition model
-
-Alternative transcription using Google's SpeechRecognition API
-
-Summarizes transcribed text using the transformers library
+Converts MP3 audio to WAV format using ffmpeg
+Uses Vosk for offline speech-to-text transcription
+Uses Google Speech Recognition for an alternative transcription method
+Summarizes large transcriptions using a Transformer-based model
 
 Usage
-
-1. Convert MP3 audio to WAV format (if needed):
-ffmpeg -i marketplace.mp3 marketplace.wav
-2. Run the script to transcribe and summarize the audio file:
+1. Transcribe audio with Vosk.
+2. 2. Convert MP3 to WAV
+If using Google Speech Recognition, convert the file to WAV format first:
+ffmpeg -i marketplace.mp3 marketplace.wav.
+3. Transcribe with Google Speech Recognition.
+4. Summarize Transcription
 
 Dependencies
 
@@ -31,11 +31,7 @@ ffmpeg: Required for converting MP3 files to WAV
 Notes
 
 Ensure you have ffmpeg installed on your system for audio conversion.
-
 The Vosk model requires downloading an appropriate language model for transcription.
 
-
 License
-
-This project is open-source and available for use under the MIT License.
-
+This project is open-source under the MIT License.
