@@ -23,11 +23,11 @@ This project transcribes audio files using **Vosk** and **Google Speech Recognit
 
 ## **Dependencies**
 
-pydub: For audio processing
-vosk: For offline speech recognition
-SpeechRecognition: For online speech recognition using Google's API
-transformers: For text summarization
-ffmpeg: Required for converting MP3 files to WAV
+- pydub: For audio processing
+- vosk: For offline speech recognition
+- SpeechRecognition: For online speech recognition using Google's API
+- transformers: For text summarization
+- ffmpeg: Required for converting MP3 files to WAV
 
 ## **Notes**
 
